@@ -35,22 +35,27 @@
         list-style-type: none;
         margin: 0 30px;
       }
-      nav ul li a{
+      nav ul li a {
         text-decoration: none;
         color: white;
       }
-      nav ul li a:hover{
+      nav ul li a:hover {
         color: lavender;
         font-size: 1.2rem;
       }
-      
+      main hr {
+        border: 0;
+        background: #2d2d61;
+        height: 1px;
+        margin: 40px 50px;
+      }
       .left {
         font-size: 2rem;
       }
       .firstSection {
         display: flex;
         justify-content: space-around;
-        margin: 80px 0;
+        margin: 150px 0;
         align-items: center;
       }
       .firstSection > div {
@@ -58,6 +63,18 @@
       }
       .leftSection {
         font-size: 2.6rem;
+      }
+      .leftSection .buttons{
+        padding: 20px 10px;
+      }
+      .leftSection .btn{
+        padding: 10px 5px;
+        background-color: #554db8b8;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
       }
       .rightSection img {
         width: 80%;
@@ -68,6 +85,77 @@
       .green {
         color: rgb(241, 238, 57);
         font-size: 4rem;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 75vh;
+      }
+      .secondSection h1 {
+        font-size: 3rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondSection .box {
+        background: white;
+        width: 75vw;
+        height: 2px;
+        margin: 20px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 90px;
+        width: 1px;
+        background: white;
+        margin: 0 200px;
+      }
+      .image-top {
+        width: 30px;
+        position: relative;
+        top: -33px;
+        left: -5px;
+      }
+      .vertical-title {
+        content: flex;
+        position: relative;
+        top: 54px;
+        left: 3px;
+        font-size: 1.2rem;
+        width: 200px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 52px;
+        left: 29px;
+        width: 195px;
+        font-size: 10px;
+        color: gray;
+      }
+      .vertical-title .year {
+        color: yellow;
+        font-size: 0.7rem;
+      }
+      footer {
+        background-color: rgb(11, 11, 53);
+      
+      }
+      .footer {
+        display: flex;
+        padding: 20px 40px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer >div{
+        width: 233px;
+      }
+      footer .footer-text-center{
+        
+        text-align: center;
+        color: gray;
+        padding: 10px 0;
       }
     </style>
   </head>
@@ -90,25 +178,100 @@
       <section class="firstSection">
         <div class="leftSection">
           Hi! My name is <span class="purple">Abhishek</span>
+          <div>and I am a passionate</div>
           <div>
-            and I am a passionate
+           <span id="green"></span>
           </div>
-          <div><span class="green"><span id="green"></span></span></div>
-          
-
+          <div class="buttons">
+            <button class="btn">Download Resume</div>
+            
+          </div>
         </div>
         <div class="rightSection">
           <img src="bg-data-scientist.png" alt="" />
         </div>
       </section>
-      
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">Highlights of the previous Seasons</span>
+        <h1>Previous Seasons</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="goal.png" alt="" />
+            <div class="vertical-title">
+              Web Developer
+              <div class="year">Dec 2021-present</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              error neque corrupti ducimus placeat praesentium porro voluptatum
+              consectetur molestias reiciendis ipsa nam repellat alias,
+              asperiores qui voluptatibus iure, odio ea.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="goal.png" alt="" />
+            <div class="vertical-title">
+              Data Analyst Intern
+              <div class="year">Jun 23-July 23</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              error neque corrupti ducimus placeat praesentium porro voluptatum
+              consectetur molestias reiciendis ipsa nam repellat alias,
+              asperiores qui voluptatibus iure, odio ea.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="goal.png" alt="" />
+            <div class="vertical-title">
+              DEVREL Intern
+              <div class="year">Sept 23 - Dec 23</div>
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              error neque corrupti ducimus placeat praesentium porro voluptatum
+              consectetur molestias reiciendis ipsa nam repellat alias,
+              asperiores qui voluptatibus iure, odio ea.
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Abhishek's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Project</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third"> <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Project</li>
+          <li>Contact</li>
+        </ul></div>
+        <div class="footer-fourth"> <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Project</li>
+          <li>Contact</li>
+        </ul></div>
+      </div>
+      <div class="footer-text-center">Copyrights &#169;  abhishekportfolio.in | All rights reserved</div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#green', {
-          strings: ['Data Analyst', 'ML Engineer','Otaku','Learner'],
-          typeSpeed: 50,
-        });
-      </script>
+      var typed = new Typed("#green", {
+        strings: ["Data Analyst", "ML Engineer", "Otaku", "Learner"],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
