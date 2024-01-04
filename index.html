@@ -67,6 +67,7 @@
       }
       .green {
         color: rgb(241, 238, 57);
+        font-size: 4rem;
       }
     </style>
   </head>
@@ -91,13 +92,23 @@
           Hi! My name is <span class="purple">Abhishek</span>
           <div>
             and I am a passionate
-            <div><span class="green">Data Analyst</span></div>
           </div>
+          <div><span class="green"><span id="green"></span></span></div>
+          
+
         </div>
         <div class="rightSection">
           <img src="bg-data-scientist.png" alt="" />
         </div>
       </section>
+      
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#green', {
+          strings: ['Data Analyst', 'ML Engineer','Otaku','Learner'],
+          typeSpeed: 50,
+        });
+      </script>
   </body>
 </html>
